@@ -1,10 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  images: {
-    unoptimized: true,
+  experimental: {
+    serverActions: true,
   },
-  basePath: '/my-portfolio',
 };
 
 module.exports = nextConfig;
